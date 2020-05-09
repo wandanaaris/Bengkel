@@ -16,7 +16,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author Wandana
  */
-public class FormService extends javax.swing.JFrame {
+public final class FormService extends javax.swing.JFrame {
     public Statement st;
     public ResultSet rs;
     public DefaultTableModel tabModel;
@@ -102,7 +102,7 @@ public class FormService extends javax.swing.JFrame {
         Tbiaya.setText("");
         Tidcustomer.setEnabled(true);
         Tnoplat.setEnabled(true);
-        nofaktur();
+        Tnofaktur.setText(String.valueOf(nofaktur()));
     }
     /**
      * This method is called from within the constructor to initialize the form.
